@@ -5,3 +5,8 @@ Programme to generate fibonacci series up to n number of terms
 when n = 5
 
   1, 1, 2, 3, 5
+
+## Install
+```sh
+$ pip install pytest
+```
