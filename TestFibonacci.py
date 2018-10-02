@@ -1,4 +1,5 @@
 from unitest import TestCase
+from main import fibonacci
 
 class FibonacciTests(TestCase):
 	def TestReturnsCorrectFibonacciNumber(self):
