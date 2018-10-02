@@ -1,6 +1,21 @@
-def fibonacci(position):
-	if position < 0:
-        raise ValueError('Input should be postive')
-	if position == 1 or position == 2:
-		return 1
-	return fibonacci(position - 2) + 	fibonacci(position - 1)
+def fibonacci(number):
+    FirstNumber = 0
+    SecondNumber = 1
+    count = 0
+    FibonacciSeries = []
+
+    if number < 0:
+        raise ValueError('Input should be positive')
+
+    elif number == 1:
+        FibonacciSeries.append(FirstNumber)
+
+    else:
+        while count < number:
+            FibonacciSeries.append(FirstNumber)
+            nthNumber = FirstNumber + SecondNumber
+            FirstNumber = SecondNumber
+            SecondNumber = nthNumber
+            count += 1
+
+    return FibonacciSeries
