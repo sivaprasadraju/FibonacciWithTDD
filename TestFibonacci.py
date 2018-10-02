@@ -6,3 +6,7 @@ class FibonacciTests(TestCase):
 		for index in range(len(correctSequence)):
 			response = fibonacci(index)
 			assert response = correctSequence[index]
+		
+	def TestRaiseValueErrorOnNegativeInput(self):
+		with pytest.raises(ValueError):
+			fibonacci(-1)
